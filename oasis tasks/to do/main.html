@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="inputs">
+        <h1>To Do List</h1>
+        <input type="text" name="task" id="task">
+        <button type="button" id="add_btn" onclick="add_task()">Add Task</button>
+        <h2>* Task List *</h2>
+    </div>
+
+    <table id="task_list">
+
+    </table>
+    <script>
+        function add_task() {
+            var new_task = document.getElementById("task").value;
+            var table = document.getElementById("task_list");
+            var task_el = document.createElement("tr");
+            task_el.innerHTML = "<td class='list' onclick='done(this)'>" + new_task + "</td><td><button type=button class='remove' onclick='remove_task(this)'>X</button></td>";
+            var new_element = table.appendChild(task_el);
+            document.getElementById("task").value = "";
+        }
+        function remove_task(e) {
+            e.parentNode.parentNode.parentNode.removeChild(e.parentNode.parentNode);
+        }
+        function done(e) {
+            e.id = "taskcomplete"
+        }
+    </script>
+</body>
+
+</html>

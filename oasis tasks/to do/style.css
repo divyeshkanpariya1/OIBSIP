@@ -1,0 +1,63 @@
+body {
+    background-color: rgb(157, 255, 0);
+}
+#task {
+    width: 60%;
+}
+#add_btn:hover {
+    background-color: rgb(0, 231, 89);
+}
+#add_btn {
+    width: 10%;
+    background-color: rgb(2, 179, 23);
+    color: white;
+}
+#add_btn, #task {
+    padding: 5px;
+    margin: 0px 0px 10px 0px;
+    border-style: none;
+}
+h2 {
+    margin-bottom: 10px;
+    color: rgb(47, 47, 254);
+}
+.inputs {
+    text-align: center;
+    width: 50%;
+    margin: auto;
+}
+table {
+    width:40%;
+    margin: auto;
+    padding: 5px;
+    background-color: rgb(157, 255, 0);
+}
+* {
+    box-sizing: border-box;
+}
+td.list {
+    width: 95%;
+    background-color: rgb(30, 214, 255);
+    padding: 10px;
+}
+td.list:hover {
+background-color: rgb(128, 195, 255);
+}
+#taskcomplete {
+    text-decoration: line-through;
+    background-color: rgb(190, 190, 190);
+}
+
+td.remove {
+    width: 5%;
+}
+td button {
+    border: none;
+    padding: 5px;
+    width: 100%;
+    background-color: rgb(255, 131, 96);
+    padding: 10px;
+}
+td button:hover {
+    background-color: rgb(255, 61, 61);
+}
